@@ -134,12 +134,12 @@ class ViChangeSurround(ViOperatorDef):
 # actual command implementation
 class _vi_plug_ys(ViTextCommandBase):
     PAIRS = {
-        '(': ('(', ')'),
-        ')': ('( ', ' )'),
-        '[': ('[', ']'),
-        ']': ('[ ', ' ]'),
-        '{': ('{', '}'),
-        '}': ('{ ', ' }'),
+        '(': ('( ', ' )'),
+        ')': ('(', ')'),
+        '[': ('[ ', ' ]'),
+        ']': ('[', ']'),
+        '{': ('{ ', ' }'),
+        '}': ('{', '}'),
     }
     def run(self, edit, mode=None, surround_with='"', count=1, motion=None):
         def f(view, s):
@@ -181,12 +181,12 @@ class _vi_plug_ys(ViTextCommandBase):
 
 class _vi_plug_cs(sublime_plugin.TextCommand):
     PAIRS = {
-        '(': ('(', ')'),
-        ')': ('( ', ' )'),
-        '[': ('[', ']'),
-        ']': ('[ ', ' ]'),
-        '{': ('{', '}'),
-        '}': ('{ ', ' }'),
+        '(': ('( ', ' )'),
+        ')': ('(', ')'),
+        '[': ('[ ', ' ]'),
+        ']': ('[', ']'),
+        '{': ('{ ', ' }'),
+        '}': ('{', '}'),
     }
     def run(self, edit, mode=None, replace_what=''):
         def f(view, s):
@@ -221,12 +221,12 @@ class _vi_plug_cs(sublime_plugin.TextCommand):
 
 class _vi_plug_ds(sublime_plugin.TextCommand):
     PAIRS = {
-        '(': ('(', ')'),
-        ')': ('( ', ' )'),
-        '[': ('[', ']'),
-        ']': ('[ ', ' ]'),
-        '{': ('{', '}'),
-        '}': ('{ ', ' }'),
+        '(': ('( ', ' )'),
+        ')': ('(', ')'),
+        '[': ('[ ', ' ]'),
+        ']': ('[', ']'),
+        '{': ('{ ', ' }'),
+        '}': ('{', '}'),
     }
     def run(self, edit, mode=None, replace_what=''):
         def f(view, s):
